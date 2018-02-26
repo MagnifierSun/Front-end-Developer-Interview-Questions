@@ -9,12 +9,19 @@
   * 调用时的上下文
 * Explain how prototypal inheritance works
 * What do you think of AMD vs CommonJS?
+  * AMD define([],function(a,b,c){})
+  * CommonJS require exports
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
-  * What needs to be changed to properly make it an IIFE?
+  * IIFE: Immediately Invoked Function Expression，意为立即调用的函数表达式
+  * 这里要用括号把函数括起来，才是立即调用函数，IIFE是为了进行作用域的隔离
+* What needs to be changed to properly make it an IIFE?
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
-  * How would you go about checking for any of these states?
+  * null 是 空，空也是一种值，而undefined是未定义的意思
+* How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
+  * 闭包就是能够读取其他函数内部变量的函数，在JS中，只有函数内部的子函数才能读取局部变量，所以闭包可以理解成“定义在一个函数内部的函数”。
 * Can you describe the main difference between a `forEach` loop and a `.map()` loop and why you would pick one versus the other?
+  * forEach 没有返回值，map 返回调用后的值，并且遍历每一项可以return 值，map 操作并不会影响原来的数组，而forEach是对原来的数组进行操作
 * What's a typical use case for anonymous functions?
 * How do you organize your code? (module pattern, classical inheritance?)
 * What's the difference between host objects and native objects?
