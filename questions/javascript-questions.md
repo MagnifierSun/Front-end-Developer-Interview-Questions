@@ -1,7 +1,12 @@
 # JS Questions:
 
-* Explain event delegation
+* Explain event delegation(解释什么是事件委托)
+  - 当我们需要对很多元素添加事件的时候，可以通过将事件添加到它们的父节点而将事件委托给父节点来触发处理函数<pre><code>$("#link-list").delegate("a", "click", function(){
+  // "$(this)" is the node that was clicked
+  console.log("you clicked a link!",$(this));
+});</code></pre>
 * Explain how `this` works in JavaScript
+  * 调用时的上下文
 * Explain how prototypal inheritance works
 * What do you think of AMD vs CommonJS?
 * Explain why the following doesn't work as an IIFE: `function foo(){ }();`.
